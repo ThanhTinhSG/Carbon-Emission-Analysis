@@ -10,7 +10,7 @@ Our dataset is compiled from publicy available from nature.com and encompasses t
 
 # Data Structure
 The dataset consists of 4 tables containing information regarding carbon emissions generated during the production of goods.
-
+![alt](
 
 # 1. Which products contribute the most to carbon emissions?
 
