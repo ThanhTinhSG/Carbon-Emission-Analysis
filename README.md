@@ -4,3 +4,14 @@ This report aims to analyze carbon emissions to examine the carbon footprint acr
 Carbon emissions play a crucial role in the environment, accounting for over 75% of global emissions and posing a significant environment challenge. These emissions contribute to the accumulation of greenhouse gases in the atmosphere, leading to climate change, planetary warming, and involvement in various environment disasters.
 
 Through this analysis, we hope to gain an understanding of the environmental impact of different industries and contribute to making informed decisions in sustainable development.
+
+# 1. Which products contribute the most to carbon emissions?
+
+--sql
+SELECT product_name, MAX(carbon_footprint_pcf)
+FROM product_emissions
+GROUP BY product_name
+ORDER BY MAX(carbon_footprint_pcf) DESC
+LIMIT 10;
+--
+
