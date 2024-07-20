@@ -7,11 +7,11 @@ Through this analysis, we hope to gain an understanding of the environmental imp
 
 # 1. Which products contribute the most to carbon emissions?
 
---sql
+---sql
 SELECT product_name, MAX(carbon_footprint_pcf)
 FROM product_emissions
 GROUP BY product_name
 ORDER BY MAX(carbon_footprint_pcf) DESC
 LIMIT 10;
---
+---
 
